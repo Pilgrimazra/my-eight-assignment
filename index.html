@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>top</title>
+    <style>
+        .grid {
+
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 2fr;
+            margin: 10px;
+            color: white;
+        }
+
+        .child {
+            background-color: rgb(201, 225, 236);
+            padding: 20px;
+        }
+
+        .child:nth-child(2) {
+            color: green;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 18px;
+            grid-template-rows: auto;
+        }
+
+        .profile {
+            text-align: center;
+            color: rgb(75, 78, 77);
+        }
+
+        .profile h2 {
+            color: rgb(12, 97, 57);
+        }
+
+       .profile img {
+            border-radius: 100px;
+        }
+
+
+        .skills {
+            text-align: center;
+            color: rgb(93, 95, 93);
+
+        }
+
+        hr {
+
+            border: 2px solid rgb(56, 55, 55);
+            width: 1000px;
+        }
+
+
+        .faculty {
+            text-align: center;
+            color: rgb(93, 95, 93);
+
+        }
+
+        .faculty img {
+            display: inline-block;
+        }
+
+        .gallery{
+            margin: 0px;
+            padding: 20px;
+            background-color: rgb(235, 230, 225);
+            
+            
+        }
+        .firstg{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: stretch; 
+        }
+
+        .photos{
+            margin: 5px;
+            padding: 5px;
+        transition: transform 0.2s ease-in-out;
+        }
+        .photos:hover{
+            transition:scale(1.1);
+        }
+        .photos img{
+            display: block;
+
+        }
+        @media (max-width:600px){
+            .photos img{
+                max-width: 100%;
+            }
+        }
+
+        .bottom1{
+            text-align: center;
+            color: rgb(91, 92, 94);
+        }
+        p{
+            color: green;
+        }
+
+        .button{
+
+            background-color: green;
+            color: white;
+            border-radius: 20px;
+            display: inline-block;
+            text-align: right;
+     
+        }
+        .button a{
+            text-decoration: none;
+        }
+        .button a:hover{
+            color: rgb(252, 222, 90);
+        }
+
+        .footer{
+            background-color: rgb(95, 184, 156);
+            display:relative;
+            text-align: center;
+            color: rgb(3, 70, 37);
+            padding: 10px;
+          
+        }
+         ul li{
+            display: inline-block;
+            margin: 10px;
+        
+
+        }
+         ul li a{
+            text-decoration: none;
+            display: inline-block;
+        
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="grid">
+        <div class="child">1</div>
+        <div class="child">
+            <h1> I'm Victor </h1>
+            <p> a programmer</p>
+        </div>
+        <div class="child">
+
+        </div>
+        <div class="child"><img src="./cloud.png" width="120px" height="60px" ;></div>
+        <div class="child"><img src="./cloud.png" width="120px" height="60px" ;></div>
+        <div class="child">
+            <div class="child"><img src="./mountain.png" width="300px" height="150px" ;></div>
+        </div>
+        <div class="child">
+        </div>
+        <div class="child">
+        </div>
+    </div>
+
+    <div class="profile">
+        <img src="./viktor.jpg" width="200" height="200" ;>
+        <h2> Hello.</h2>
+        <h5> I am a web developer cum designer, <br>A faculty and a student at capacitybay,<br> a foundation tasked with
+            bringing tech<br>
+            knowledge down to the grassroots</h5>
+        <br>
+        <h3>..................</h3>
+        <br><br>
+
+    </div>
+    <div class="skills">
+        <h2 style="color: rgb(5, 110, 84);"> My Skills. </h2>
+
+        <hr>
+        <h3 style="color: rgb(5, 110, 84);"> Web Designer and Web Developer </h3>
+        <h5>I love coding a lot, started coding more <br>like fun and dreaming for a career change but now <br>I want to
+            provide solutions and build web apps.</h5>
+        <img src="./computer3-modified (1).png" width="250px" height="200px" ;>
+
+        <hr>
+
+    </div>
+    <div class="faculty">
+        <h2 style="color: rgb(5, 110, 84);"> Faculty At CapacityBay</h2>
+        <div class="pixright">
+            <img src="./Teacher-modified.png" width="200px" height="200px">
+            <h5>I teach full stack web development in CapacityBay.<br> I also love reading in order to widen my scope
+                about life.
+                <br>Scroll down and send a message, let me teach you a new skill.
+            </h5>
+            <br>
+            <br>
+            <h3>..................</h3>
+        </div>
+
+
+    </div>
+
+    <h1 style="text-align: center; color: darkgreen;"> My Photo Gallery</h1>
+    <hr style="border:2px solid blue; width: 250px;">
+<div class="gallery">
+    <div class="firstg">
+        <div class="photos"><img src="./1.jpg" alt="pix1" width="250px" height="150px"></div>
+        <div class="photos"><img src="./2.jpg" alt="pix1" width="250px" height="150px"></div>
+        <div class="photos"><img src="./3.jpg" alt="pix1" width="250px" height="150px"></div>
+    </div>
+    <div class="firstg">
+        <div class="photos"><img src="./4.jpg" alt="pix1" width="250px" height="150px"></div>
+    <div class="photos"><img src="./5.jpg" alt="pix1" width="250px" height="150px"></div>
+    <div class="photos"><img src="./6.jpg" alt="pix1" width="250px" height="150px"></div>
+    </div>
+    
+</div>
+<div class="bottom1">
+    <h3>..................</h3>
+<p> <strong>Get In Touch</strong></p>
+<h4>Love Coding As Much As I Do</h4>
+<h5>Then hit me up, let’s learn and code together</h5>
+
+<div class="button">
+    <li> <a href="mailto:ogbonnavictor3@gmail.com">Contact Me</a></li>
+</div>
+</div>
+
+<div class="footer">
+
+    <ul>
+        <li><a href="#" >Linkdelin</a></li>
+        <li><a href="#" >Twiter</a></li>
+        <li><a href="#" >Website</a></li>
+    </ul>
+    <h4 style="color: rgb(217, 224, 235);"><strong> @ 2024 ogbonnavictor</strong>  </h4>
+</div>
+
+</body>
+
+</html>
